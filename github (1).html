@@ -6,49 +6,57 @@
     <title>Invitación de San Valentín</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffe6e6;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffccd5;
             text-align: center;
             padding: 20px;
         }
         .card {
             background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
             display: inline-block;
+            max-width: 500px;
         }
         h1 {
-            color: #d6336c;
+            color: #ff4d6d;
+            font-size: 28px;
         }
         p {
             color: #444;
             font-size: 18px;
         }
         .btn {
-            background-color: #d6336c;
+            background-color: #ff4d6d;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 18px;
             display: inline-block;
             margin-top: 20px;
+            cursor: pointer;
         }
         .btn:hover {
-            background-color: #a02650;
+            background-color: #c9184a;
         }
     </style>
+    <script>
+        function confirmarAsistencia() {
+            window.location.href = "gracias mi vida.html";
+        }
+    </script>
 </head>
 <body>
     <div class="card">
-        <h1>¡Feliz San Valentín!</h1>
-        <p>Te invito a que pases san valentin conmigo c:.</p>
+        <h1>💖 ¡Feliz San Valentín! 💖</h1>
+        <p>Te invito a compartir san valentin conmigo.</p>
         <p><strong>Fecha:</strong> 14 de febrero</p>
-        <p><strong>Hora:</strong> NOSE DEPENDE LA ENTRADA</p>
-        <p><strong>Lugar:</strong> SUPERCINES BB</p>
-        <a href="#" class="btn">Confirmar asistencia o sino bala</a>
+        <p><strong>Hora:</strong> nose depende el clima</p>
+        <p><strong>Lugar:</strong> Supercines</p>
+        <button class="btn" onclick="confirmarAsistencia()">Confirmar asistencia o bala</button>
     </div>
 </body>
 </html>
